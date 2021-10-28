@@ -6,14 +6,33 @@
     <title> Movies that I have not seen: </title>
     <style>
     body{
-      background-color: Cyan
+      background-color: DeepSkyBlue;
+      font-family: "Roboto Slab", serif;
+
     }
     ol.a {
       list-style-type: upper-roman;
       color: purple
 
     }
-      </style>
+      input[type=submit] {
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 5 px solid blue;
+      border-radius: 16px;
+      background-color: gold;
+      text-align: right
+    }
+
+    }
+    input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+    }
+
+    </style>
   </head>
   <body>
     <a href="index.html">Back to the Top Ten List</a>
@@ -26,20 +45,25 @@
       <li>Pokemon-I Choose You!</li>
     </ol>
 
-    <h1 style="color:white" font-family="'Roboto Slab', serif;"> <b>Create an Account<b> </h1>
-    <h2 style="color:white"font="Roboto"
+    <h1 style="color:white"> <b>Create an Account<b> </h1>
+    <h2 style="color:white">
     <form>
       <label for="fname">First Name</label>
       <label class=righty style="text-align:right" for "lname">Last Name</label> <br />
-      <input type="text">
-      <input class=righty style="text-align:right" type="text"></label>
-      <label for="emaile"><br /><br />Email<br /><label>
-      <input type="text"><br />
+      <input type="text" id="fname">
+      <input class=righty style="text-align:right" type="text" id="lname"></label>
+      <label for="emaile"><br /><br />Email<label>
+      <label style="font-size:10px" for "Age13">Are you 13+ years old?</label> <br />
+      <input type="text" id="emaile">
+      <input type="radio" name="Yes" value="Yes"id=Age13Y>
+      <label style="font-size:10px" for "Age13Y">Yes</label>
+      <input type="radio" name= "No" value="No"id=Age13N>
+      <label style="font-size:10px" for "Age13N">No</label> <br />
       <input type="checkbox" name="" value="">
-      <label class=check style="font-size:10px" for="checkbox">I agree to the terms and conditions.<br /></label>
-      <input type="submit" value="Submit">
+      <label class=righty style="font-size:10px; text-align:right" for="checkbox">I agree to the terms and conditions.</label>
 
+      <input class=righty style="color:white" type="submit" value="Submit">
+      </h2>
     </form>
-    </h2>
   </body>
 </html>
