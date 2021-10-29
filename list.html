@@ -6,21 +6,31 @@
     <title> Movies that I have not seen: </title>
     <style>
     body{
-      background-color: DeepSkyBlue;
+      background-color: Linen;
       font-family: "Roboto Slab", serif;
+      }
 
-    }
     ol.a {
       list-style-type: upper-roman;
       color: purple
+      }
 
-    }
+    table {
+      border-collapse: collapse;
+      }
+
+
+      th, tr {
+        background-color: DeepSkyBlue;
+        padding: 14px;
+      }
+
       input[type=submit] {
-      padding: 12px 20px;
+      padding: 12px 30px;
       margin: 8px 0;
       box-sizing: border-box;
       border: 5 px solid blue;
-      border-radius: 16px;
+      border-radius: 20px;
       background-color: gold;
       text-align: right
     }
@@ -45,7 +55,48 @@
       <li>Pokemon-I Choose You!</li>
     </ol>
 
-    <h1 style="color:white"> <b>Create an Account<b> </h1>
+    <h2 style="color:white">
+  <form>
+
+      <table style="width:30%; font-size:10px">
+        <th colspan="2" style="font-size:40px; text-align:left"> <b>Create an Account<b></th>
+        <tr>
+          <td> <label for="fname">First Name</label> </td>
+          <td> <label class=righty style="text-align:right" for "lname">Last Name</label> <br /> </td>
+        </tr>
+
+        <tr>
+          <td> <input type="text" id="fname"> </td>
+          <td><input class=righty style="text-align:right" type="text" id="lname"></label> </td>
+        </tr>
+
+        <tr>
+          <td> <label for="emaile"><br />Email<label> </td>
+          <td><label style="font-size:10px" for "Age13"><br />Are you 13+ years old?</label> </td>
+        </tr>
+
+        <tr>
+          <td> <input type="text" id="emaile"> </td>
+          <td> <input type="radio" name="Yes" value="Yes"id=Age13Y>
+         <label style="font-size:10px" for "Age13Y">Yes</label>
+         <input type="radio" name= "No" value="No"id=Age13N>
+         <label style="font-size:10px" for "Age13N">No</label> </td>
+        </tr>
+
+        <tr>
+          <td> <input type="checkbox" name="" value="">
+          <label class=righty style="font-size:10px" for="checkbox">I agree to the terms and conditions.</label> </td>
+          <td> <input class=righty style="color:white" type="submit" value="Submit"> </td>
+        </tr>
+
+        </h2>
+      </tr>
+    </table>
+  </form>
+
+
+
+    <!-- <h1 style="color:white"> <b>Create an Account<b> </h1>
     <h2 style="color:white">
     <form>
       <label for="fname">First Name</label>
@@ -64,6 +115,6 @@
 
       <input class=righty style="color:white" type="submit" value="Submit">
       </h2>
-    </form>
+    </form> -->
   </body>
 </html>
